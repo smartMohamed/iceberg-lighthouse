@@ -1,0 +1,6 @@
+version: '3'
+services:
+  iceberg-lighthouse:
+    build: '.'
+    ports:
+      - 6000:3000
