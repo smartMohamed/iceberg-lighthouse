@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node lib/index.js",
     "dev": "NODE_ENV=dev nodemon lib/index.js",
-    "compose:dev": "docker-compose -f docker-compose.dev.yml up -d",
+    "compose:dev": "docker-compose up -d",
     "test": "jest"
   },
   "devDependencies": {

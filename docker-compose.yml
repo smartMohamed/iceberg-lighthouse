@@ -8,8 +8,9 @@ services:
       - HOST=influxdb
     volumes:
       - ./config.json:/usr/src/lighthouse/config.json
-      - ./volume/reports:/usr/src/lighthouse/reports
-      - ./volume/logs:/usr/src/lighthouse/logs
+      - ./volume:/usr/src/lighthouse/volume
+    depends_on:
+      - influxdb
   influxdb:
     image: 'influxdb:latest'
     ports:
