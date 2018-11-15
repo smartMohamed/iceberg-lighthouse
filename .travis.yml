@@ -3,7 +3,7 @@ node_js:
   - '10'
   - '8'
 install:
-  - npm global add codecov
+  - yarn global add codecov
   - yarn
 script:
   - yarn test --coverage
