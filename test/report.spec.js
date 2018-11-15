@@ -1,7 +1,6 @@
 // start mocks
 const fs = require('fs-extra')
 const { generateReportHtml } = require('lighthouse/lighthouse-core/report/report-generator')
-
 jest.mock('lighthouse/lighthouse-core/report/report-generator', () => ({
   generateReportHtml: jest.fn(() => 'mocked_html_report'),
 }))

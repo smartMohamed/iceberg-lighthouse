@@ -1,15 +1,14 @@
-'use strict';
+'use strict'
 
 module.exports = {
   presets: [
     [
-      "@babel/env",
+      '@babel/env',
       {
         targets: {
-          node: "current"
+          node: 'current',
         },
       },
     ],
   ],
-  plugins: ["@babel/plugin-proposal-optional-chaining"]
 }
