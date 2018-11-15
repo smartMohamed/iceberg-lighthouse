@@ -1,0 +1,8 @@
+node_modules
+.vscode
+coverage
+logs/*.log
+.DS_STORE
+*.ignore
+volume/
+test/
