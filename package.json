@@ -18,7 +18,8 @@
     "babel-eslint": "10.0.1",
     "babel-jest": "23.6.0",
     "eslint": "5.8.0",
-    "jest": "23.6.0"
+    "jest": "23.6.0",
+    "micro-dev": "3.0.0"
   },
   "dependencies": {
     "chrome-launcher": "0.10.5",
@@ -27,6 +28,8 @@
     "influx": "5.0.7",
     "lighthouse": "3.2.1",
     "lodash": "4.17.11",
+    "micro": "9.3.3",
+    "microrouter": "3.1.3",
     "promx": "1.0.1",
     "serve-handler": "5.0.7",
     "winston": "3.1.0"
