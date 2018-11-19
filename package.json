@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "npx micro lib/index.js",
     "dev": "NODE_ENV=dev nodemon lib/index.js",
-    "compose:dev": "docker-compose up -d",
+    "compose": "docker-compose up -d",
     "test": "jest"
   },
   "devDependencies": {
