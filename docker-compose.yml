@@ -1,16 +1,16 @@
 version: '3'
 services:
-  iceberg-lighthouse:
-    build: '.'
-    ports:
-      - 6000:3000
-    environment:
-      - HOST=influxdb
-    volumes:
-      - ./config.json:/usr/src/lighthouse/config.json
-      - ./volume:/usr/src/lighthouse/volume
-    depends_on:
-      - influxdb
+  # iceberg-lighthouse:
+  #   build: '.'
+  #   ports:
+  #     - 6000:3000
+  #   environment:
+  #     - HOST=influxdb
+  #   volumes:
+  #     - ./config.json:/usr/src/lighthouse/config.json
+  #     - ./volume:/usr/src/lighthouse/volume
+  #   depends_on:
+  #     - influxdb
   influxdb:
     image: 'influxdb:latest'
     ports:
