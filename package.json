@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "npx micro lib/index.js",
-    "dev": "NODE_ENV=dev nodemon lib/index.js",
+    "dev": "NODE_ENV=dev npx micro-dev lib/index.js -c",
+    "dev:watch": "nodemon --exec 'yarn dev'",
     "compose": "docker-compose up -d",
     "test": "jest"
   },
@@ -30,8 +31,18 @@
     "lodash": "4.17.11",
     "micro": "9.3.3",
     "microrouter": "3.1.3",
+    "p-queue": "3.0.0",
     "promx": "1.0.1",
     "serve-handler": "5.0.7",
     "winston": "3.1.0"
+  },
+  "nodemonConfig": {
+    "ext": "js,json",
+    "watch": [
+      "lib/"
+    ],
+    "events": {
+      "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
+    }
   }
 }
