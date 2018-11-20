@@ -14,6 +14,7 @@ lighthouse metrics gatherer, inspired by garie-lighthouse
 **Difference from `garie-lightouse`**
 
 - **Accept custom Lighthouse config**
+- **Queue based auditing**
 - **More stable**
 - **Lightweight docker image (alpine based)**
   > ![images](./assets/images.png 'Reports')
