@@ -11,20 +11,20 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/cli": "7.1.5",
-    "@babel/core": "7.1.5",
-    "@babel/node": "7.0.0",
-    "@babel/preset-env": "7.1.5",
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.2.2",
+    "@babel/node": "7.2.2",
+    "@babel/preset-env": "7.2.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "23.6.0",
-    "eslint": "5.8.0",
+    "eslint": "5.12.0",
     "jest": "23.6.0",
     "micro-dev": "3.0.0"
   },
   "dependencies": {
     "chrome-launcher": "0.10.5",
-    "cron": "1.5.0",
+    "cron": "1.6.0",
     "fs-extra": "7.0.1",
     "influx": "5.0.7",
     "lighthouse": "3.0.3",
@@ -35,6 +35,10 @@
     "promx": "1.0.1",
     "serve-handler": "5.0.7",
     "winston": "3.1.0"
+  },
+  "engines": {
+    "node": "^8.10.0 || >=9.10.0",
+    "npm": ">= 4.0.0"
   },
   "nodemonConfig": {
     "ext": "js,json",
