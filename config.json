@@ -1,28 +1,23 @@
 {
-  "cron": "00 00 */6 * * *",
-  "urls": [
-      {
-          "url": "https://www.google.com",
-          "plugins": [
-              {
-                  "name": "lighthouse",
-                  "report": true
-              }
-          ]
-      },
-      {
-          "url": "https://www.example.com",
-          "plugins": [
-              {
-                  "name": "lighthouse",
-                  "report": true,
-                  "config": {
-                      "settings": {
-                          "emulatedFormFactor": "desktop"
-                      }
-                  }
-              }
-          ]
-      }
-  ]
+    "cron": "0 */30 * * * *",
+    "urls": [{
+            "url": "https://www.google.com",
+            "plugins": [{
+                "name": "lighthouse",
+                "report": true
+            }]
+        },
+        {
+            "url": "https://www.example.com",
+            "plugins": [{
+                "name": "lighthouse",
+                "report": true,
+                "config": {
+                    "settings": {
+                        "emulatedFormFactor": "desktop"
+                    }
+                }
+            }]
+        }
+    ]
 }
